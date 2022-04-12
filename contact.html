@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Web Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="images/logo.png" alt="LOGO"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contect Us</h1>
+    </section>
+<!-- ----- contact Us -------  -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14194.232215683776!2d77.95519973006407!3d27.20162377806267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974779c308ec9f5%3A0xbcc307b8d98dac05!2sAvas%20Vikas%20Colony%2C%20Lohamandi%2C%20Agra%2C%20Uttar%20Pradesh%20282007!5e0!3m2!1sen!2sin!4v1649751650712!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home" ></i>
+                <span>
+                    <h5>xyz road, ABC Building</h5>
+                    <p>Agra , Uttar pradesh</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone" ></i>
+                <span>
+                    <h5>+91-5800055650</h5>
+                    <p>Monday-saturday,10am to 6pm</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope" ></i>
+                <span>
+                    <h5>info@vk.com</h5>
+                    <p>Email us for query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+
+            <form action="formhandler.php" method="post">
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Your email address" required>
+                <input type="text" name="subject" placeholder="Enter Your subject" required>
+                <textarea rows="8" name="massage" placeholder="Massage" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Massage</button>
+            </form>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ----- Footer ----  -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam aspernatur id numquam deleniti aperiam aliquam accusamus dicta cupiditate necessitatibus, <br>sed eius unde iure suscipit quos ipsam. Earum recusandae quisquam repellendus, quam animi excepturi molestiae aspernatur corrupti, doloribus sequi ullam aperiam ratione modi eaque veritatis assumenda numquam quidem. Alias, nisi sapiente dicta saepe et, totam expedita aperiam nemo, aliquid ipsa maiores!</p>
+    <div class="icon">
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+
+    </div>
+    <p>Made with <by class="fa fa-heart" aria-hidden="true">by Vishal Kumar</i></p>
+
+
+</section>
+
+<!-- -----javaScrit for Toggle Manu----- -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function showMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>    
+</body>
+</html>
